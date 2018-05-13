@@ -1,2 +1,2 @@
 name = 'Sergey Kurbanov'
-title = 'SergeyKurbanov | infobra.ru'
+domain = 'infobra.ru'

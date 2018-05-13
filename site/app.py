@@ -37,7 +37,7 @@ def index():
     return render_template('index.html',
                            async_mode=socketio.async_mode,
                            name=config.name,
-                           title=config.title,
+                           title=config.domain+"||"+config.name,
                            os=check_os())
 
 
