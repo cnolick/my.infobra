@@ -1,4 +1,28 @@
-# Main
+# WTF?
+
+Simple page.
+
+# What's have this page?
+
+Nothing.
+
+# TO DO
+
+* simple monotoring DO
+* maybe make this page more beautiful
+
+
+# How this work
+
+I use python3.6, flask, socket.io and a little bit god power.
+
+
+# Instruction
+
+* create file `config.py`
+* write in 
+```python 
+ # Main
 name = 'Sergey Kurbanov'
 domain = 'infobra.ru'
 email = 'snkurban@infobra.ru'
@@ -8,5 +32,5 @@ linkedin = 'https://www.linkedin.com/in/%D1%81%D0%B5%D1%80%D0%B3%D0%B5%D0%B9-%D0
 github = 'https://github.com/cnolick'
 twitter = 'https://twitter.com/cnolick'
 facebook = 'https://www.facebook.com/sergey.kurbanov.54'
-
-
+```
+* profit!

@@ -1,39 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta charset="utf-8">
+  <meta charset="utf-8">
   <title>{{ title }}</title>
-  <link rel="stylesheet" media="screen" href="/static/css/style.css">
-  <link rel="stylesheet" href="/static/css/font-awesome.min.css">
-  <noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" /></noscript>
-
+  <link rel="stylesheet" media="screen" href="/static/css/main.css">
+  <link rel="stylesheet" href="/static/css/font-awesome.css">
+  
 </head>
 <body>
 
-    <div class="name">
-	    <center><h1>{{ name }}</h1></center>
-    </div>
+      <div class="name">
+        <h1>{{ name }}</h1>
+      </div>
 
-    <div class="contacts" id="contacts"></div>
-
-    <div id="particles-js"></div>
-
-    <div class="os">{{ os|safe }}</div>
-
-    <div class="footer"><p>ping: <b><span id="ping-pong"></span>ms</b></p></div>
-
-<!-- scripts -->
-<script src="/static/particles.js"></script>
-<script src="/static/js/app.js"></script>
-
-<!-- stats.js -->
-<script src="/static/js/lib/stats.js"></script>
-<script src="/static/scripts/google.js"></script>
-
-<script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
-<script type="text/javascript" src="/static/scripts/connect.js"></script>
+      <div class="social" id="social"></div>
 
 </body>
 </html>
+
+
+<!-- dependence -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
+<!-- scr -->
+<script type="text/javascript" src="/static/js/socket.js"></script>
