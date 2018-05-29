@@ -57,6 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 170%;
+  color: #999999;
   margin-top: 1em;
   margin-bottom: 0.5em;
   line-height: 1.4em;
@@ -94,7 +95,7 @@ p {
   margin: 0.5em 0 2.5em;
 }
 
-a         { color: #00a; }
+a         { color: #999999; }
 a:hover   { color: #000; }
 a:visited { color: #a0a; }
 
@@ -318,8 +319,22 @@ code {
   }
 }
 
+.name a {
+    text-decoration: none;
+}
+
 .name {
     margin: 0;
+    font-size: 25pt;
+    color: #999999;
+    display: inline-block;
+    text-decoration: none;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    text-decoration: none;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -342,4 +357,34 @@ code {
     background: transparent;
     white-space: 10px;
 
+}
+
+.counter {
+    margin: 0;
+    position: absolute;
+    top: 95%;
+    color: #999999;
+    font-size: 1em;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+.center {
+    margin: 0;
+    font-size: 25pt;
+    color: #999999;
+    display: inline-block;
+    text-decoration: none;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }

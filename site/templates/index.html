@@ -5,15 +5,21 @@
   <title>{{ title }}</title>
   <link rel="stylesheet" media="screen" href="/static/css/main.css">
   <link rel="stylesheet" href="/static/css/font-awesome.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css" integrity="sha384-VGCZwiSnlHXYDojsRqeMn3IVvdzTx5JEuHgqZ3bYLCLUBV8rvihHApoA1Aso2TZA"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV"
+    crossorigin="anonymous">
   
 </head>
 <body>
 
       <div class="name">
-        <h1>{{ name }}</h1>
+        <h1><a href="/info">{{ name }}</a></h1>
       </div>
 
       <div class="social" id="social"></div>
+
+      <div class="counter"><i class="fa fa-users"></i>{{ count_u }}</div>
 
 </body>
 </html>

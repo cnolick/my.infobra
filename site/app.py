@@ -3,11 +3,12 @@ import config
 import os
 import binascii
 from threading import Lock
+from multiprocessing import Value
 import random
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 
-
+counter = Value('i', 0)
 
 async_mode = None
 
@@ -39,7 +40,18 @@ def contact():
 
 @app.route('/')
 def index():
+    with counter.get_lock():
+        counter.value += 1
     return render_template('index.html',
+                        async_mode=socketio.async_mode,
+                        name=config.name,
+                        title=config.domain+" || "+config.name,
+                           count_u=counter.value)
+
+
+@app.route('/info')
+def info():
+    return render_template('me.html',
                            async_mode=socketio.async_mode,
                            name=config.name,
                            title=config.domain+" || "+config.name)
